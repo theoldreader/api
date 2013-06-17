@@ -9,6 +9,10 @@ Current API tries to mimic the unofficial Google Reader API.
 - We also use ObjectId in Stream Ids instead of URL (example: ```feed/00157a17b192950b65be3791```)
 - All user ids are replaced by ```-``` in state/label strings (examples: ```user/-/state/com.google/reading-list```, ```user/-/label/Folder```)
 
+### TODO
+
+- Implement ```ot```, ```nt``` parameters
+
 ### Authentication
 
 All requests you will be sending to the API should be authenticated by a token.
