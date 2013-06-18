@@ -12,6 +12,12 @@ Current API tries to mimic the unofficial Google Reader API.
 ### TODO
 
 - Implement ```ot```, ```nt``` parameters
+- Fix unread-count
+- mark-all-as-read (```ts```?)
+- Lines about ```/reader/atom```
+- Alias ```/accounts/ClientLogin``` under ```/reader/api/0```
+- Json output for ```/accounts/ClientLogin```
+- Require ```output=json```
 
 ### Authentication
 
