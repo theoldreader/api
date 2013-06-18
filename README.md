@@ -12,12 +12,9 @@ Current API tries to mimic the unofficial Google Reader API.
 ### TODO
 
 - Implement ```ot```, ```nt``` parameters
-- Fix unread-count
-- mark-all-as-read (```ts```?)
-- Lines about ```/reader/atom```
-- Alias ```/accounts/ClientLogin``` under ```/reader/api/0```
-- Json output for ```/accounts/ClientLogin```
-- Require ```output=json```
+- mark-all-as-read (```ts``` in milliseconds)
+- Starring & tagging items
+- Social features
 
 ### Authentication
 
@@ -40,6 +37,10 @@ LSID=none
 Auth=LyTEJPvTJiSPrCxLu46d
 ```
 
+Please note that you might get a token by requesting following url: ```/reader/api/0/accounts/ClientLogin```
+
+Also you might add ```output=json``` to POST parameters for corresponding result.
+
 #### Using a token
 
 Include `Authorization: GoogleLogin auth=TOKEN` HTTP header in all your requests. For example:
@@ -50,7 +51,7 @@ Include `Authorization: GoogleLogin auth=TOKEN` HTTP header in all your requests
 
 #### Token
 
-GET [https://theoldreader.com/reader/api/0/token](https://theoldreader.com/reader/api/0/token)
+GET [https://theoldreader.com/reader/api/0/token?output=json](https://theoldreader.com/reader/api/0/token?output=json)
 
 ```
 > curl https://theoldreader.com/reader/api/0/token -H "Authorization: GoogleLogin auth=LyTEJPvTJiSPrCxLu46d"
@@ -61,23 +62,23 @@ Added for compatibility.
 
 #### User info
 
-GET [https://theoldreader.com/reader/api/0/user-info](https://theoldreader.com/reader/api/0/user-info)
+GET [https://theoldreader.com/reader/api/0/user-info?output=json](https://theoldreader.com/reader/api/0/user-info?output=json)
 
 ```
-> curl https://theoldreader.com/reader/api/0/user-info -H "Authorization: GoogleLogin auth=LyTEJPvTJiSPrCxLu46d"
+> curl https://theoldreader.com/reader/api/0/user-info?output=json -H "Authorization: GoogleLogin auth=LyTEJPvTJiSPrCxLu46d"
 {"userId":"00157a17b192950b65be3791","userName":"Test","userProfileId":"00157a17b192950b65be3791","userEmail":"test@krasnoukhov.com","isBloggerUser":false,"signupTimeSec":1370709105,"isMultiLoginEnabled":false}
 
 ```
 
 #### Preferences list
 
-GET [https://theoldreader.com/reader/api/0/preference/list](https://theoldreader.com/reader/api/0/preference/list)
+GET [https://theoldreader.com/reader/api/0/preference/list?output=json](https://theoldreader.com/reader/api/0/preference/list?output=json)
 
 Added for compatibility.
 
 #### Friend list
 
-GET [https://theoldreader.com/reader/api/0/friend/list](https://theoldreader.com/reader/api/0/friend/list)
+GET [https://theoldreader.com/reader/api/0/friend/list?output=json](https://theoldreader.com/reader/api/0/friend/list?output=json)
 
 Added for compatibility for now. Will be used for The Old Reader social features.
 
@@ -85,13 +86,13 @@ Added for compatibility for now. Will be used for The Old Reader social features
 
 #### Tag list
 
-GET [https://theoldreader.com/reader/api/0/tag/list](https://theoldreader.com/reader/api/0/tag/list)
+GET [https://theoldreader.com/reader/api/0/tag/list?output=json](https://theoldreader.com/reader/api/0/tag/list?output=json)
 
 Contains folder list.
 
 #### Stream preferences list
 
-GET [https://theoldreader.com/reader/api/0/preference/stream/list](https://theoldreader.com/reader/api/0/preference/stream/list)
+GET [https://theoldreader.com/reader/api/0/preference/stream/list?output=json](https://theoldreader.com/reader/api/0/preference/stream/list?output=json)
 
 Contains information about subscriptions ordering for root and user folders.
 
@@ -124,13 +125,13 @@ Parameters:
 
 #### Unread count
 
-GET [https://theoldreader.com/reader/api/0/unread-count](https://theoldreader.com/reader/api/0/unread-count)
+GET [https://theoldreader.com/reader/api/0/unread-count?output=json](https://theoldreader.com/reader/api/0/unread-count?output=json)
 
 Contains unread counts for all items (reading list), each folder and subscription.
 
 #### Subscriptions list
 
-GET [https://theoldreader.com/reader/api/0/subscription/list](https://theoldreader.com/reader/api/0/subscription/list)
+GET [https://theoldreader.com/reader/api/0/subscription/list?output=json](https://theoldreader.com/reader/api/0/subscription/list?output=json)
 
 Each subscription contains ```url``` and ```htmlUrl```.
 
@@ -171,7 +172,7 @@ Parameters:
 
 #### Item ids
 
-GET [https://theoldreader.com/reader/api/0/stream/items/ids](https://theoldreader.com/reader/api/0/stream/items/ids)
+GET [https://theoldreader.com/reader/api/0/stream/items/ids?output=json](https://theoldreader.com/reader/api/0/stream/items/ids?output=json)
 
 Parameters:
 
@@ -202,7 +203,7 @@ Other parameters:
 
 #### Item contents
 
-POST [https://theoldreader.com/reader/api/0/stream/items/contents](https://theoldreader.com/reader/api/0/stream/items/contents)
+POST [https://theoldreader.com/reader/api/0/stream/items/contents?output=json](https://theoldreader.com/reader/api/0/stream/items/contents?output=json)
 
 Parameters:
 
@@ -214,7 +215,7 @@ Parameters:
 
 #### Stream contents
 
-GET [https://theoldreader.com/reader/api/0/stream/contents](https://theoldreader.com/reader/api/0/stream/contents)
+GET [https://theoldreader.com/reader/api/0/stream/contents?output=json](https://theoldreader.com/reader/api/0/stream/contents?output=json)
 
 Parameters:
 	
@@ -222,7 +223,10 @@ Parameters:
 	
 	# Atom output
 	output=atom
- 
+
+Also there is an atom feed for specific Stream Id:
+
+GET [https://theoldreader.com/reader/atom/feed/00157a17b192950b65be3791](https://theoldreader.com/reader/atom/feed/00157a17b192950b65be3791) 
 
 #### Updating items
 
