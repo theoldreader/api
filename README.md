@@ -227,6 +227,14 @@ Also there is an atom feed for specific Stream Id:
 
 GET [https://theoldreader.com/reader/atom/feed/00157a17b192950b65be3791](https://theoldreader.com/reader/atom/feed/00157a17b192950b65be3791) 
 
+And state:
+
+GET [https://theoldreader.com/reader/atom/user/-/state/com.google/read](https://theoldreader.com/reader/atom/user/-/state/com.google/read) 
+
+And folder:
+
+GET [https://theoldreader.com/reader/atom/user/-/label/Folder](https://theoldreader.com/reader/atom/user/-/label/Folder) 
+
 #### Marking all as read
 
 POST [https://theoldreader.com/reader/api/0/mark-all-as-read](https://theoldreader.com/reader/api/0/mark-all-as-read)
