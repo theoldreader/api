@@ -11,7 +11,6 @@ Current API tries to mimic the unofficial Google Reader API.
 
 ### TODO
 
-- Implement ```ot```, ```nt``` parameters
 - Starring & tagging items
 - Social features
 
@@ -199,6 +198,8 @@ Other parameters:
 	n=1000 # Limit items
 	r=o # Reverse sorting
 	c=… # Continuation
+	ot=1371645508 # Older than
+	nt=1371645508 # Newer than
 
 #### Item contents
 
