@@ -12,7 +12,6 @@ Current API tries to mimic the unofficial Google Reader API.
 ### TODO
 
 - Implement ```ot```, ```nt``` parameters
-- mark-all-as-read (```ts``` in milliseconds)
 - Starring & tagging items
 - Social features
 
@@ -227,6 +226,15 @@ Parameters:
 Also there is an atom feed for specific Stream Id:
 
 GET [https://theoldreader.com/reader/atom/feed/00157a17b192950b65be3791](https://theoldreader.com/reader/atom/feed/00157a17b192950b65be3791) 
+
+#### Marking all as read
+
+POST [https://theoldreader.com/reader/api/0/mark-all-as-read](https://theoldreader.com/reader/api/0/mark-all-as-read)
+
+Parameters:
+
+	s=feed/00157a17b192950b65be3791 # Stream Id
+	ts=1371645508999 # Older than timestamp in milliseconds
 
 #### Updating items
 
