@@ -11,7 +11,6 @@ Current API tries to mimic the unofficial Google Reader API.
 
 ### TODO
 
-- Auth by username
 - Starring & tagging items
 - Social features
 
@@ -243,8 +242,17 @@ POST [https://theoldreader.com/reader/api/0/mark-all-as-read](https://theoldread
 
 Parameters:
 
-	s=feed/00157a17b192950b65be3791 # Stream Id
-	ts=1371645508000000 # Older than timestamp in nanoseconds
+	# All items
+	s=user/-/state/com.google/reading-list
+	
+	# Folder
+	s=user/-/label/...
+	
+	# Subscription
+	s=feed/...
+	
+	# Older than timestamp in nanoseconds
+	ts=1371645508000000
 
 #### Updating items
 
