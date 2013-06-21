@@ -24,7 +24,6 @@ Sample request:
 
 ```	
 curl -d "accountType=HOSTED_OR_GOOGLE&service=reader&Email=test@krasnoukhov.com&Passwd=..." https://theoldreader.com/accounts/ClientLogin
-
 ```
 
 Sample response:
@@ -49,7 +48,7 @@ Include `Authorization: GoogleLogin auth=TOKEN` HTTP header in all your requests
 
 #### Token
 
-GET [https://theoldreader.com/reader/api/0/token?output=json](https://theoldreader.com/reader/api/0/token?output=json)
+GET [https://theoldreader.com/reader/api/0/token](https://theoldreader.com/reader/api/0/token)
 
 ```
 > curl https://theoldreader.com/reader/api/0/token -H "Authorization: GoogleLogin auth=LyTEJPvTJiSPrCxLu46d"
@@ -65,7 +64,6 @@ GET [https://theoldreader.com/reader/api/0/user-info?output=json](https://theold
 ```
 > curl https://theoldreader.com/reader/api/0/user-info?output=json -H "Authorization: GoogleLogin auth=LyTEJPvTJiSPrCxLu46d"
 {"userId":"00157a17b192950b65be3791","userName":"Test","userProfileId":"00157a17b192950b65be3791","userEmail":"test@krasnoukhov.com","isBloggerUser":false,"signupTimeSec":1370709105,"isMultiLoginEnabled":false}
-
 ```
 
 #### Preferences list
