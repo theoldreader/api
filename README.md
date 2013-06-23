@@ -26,7 +26,7 @@ Please note that The Old Reader allows users to sign in via OAuth (Google or Fac
 Sample request:
 
 ```	
-curl -d "accountType=HOSTED_OR_GOOGLE&service=reader&Email=test@krasnoukhov.com&Passwd=..." https://theoldreader.com/accounts/ClientLogin
+curl -d "client=YourAppName&accountType=HOSTED_OR_GOOGLE&service=reader&Email=test@krasnoukhov.com&Passwd=..." https://theoldreader.com/accounts/ClientLogin
 ```
 
 Sample response:
@@ -132,7 +132,7 @@ Contains unread counts for all items (reading list), each folder and subscriptio
 
 GET [https://theoldreader.com/reader/api/0/subscription/list?output=json](https://theoldreader.com/reader/api/0/subscription/list?output=json)
 
-Each subscription contains ```url``` and ```htmlUrl```.
+Each subscription contains ```url```, ```htmlUrl``` and ```iconUrl```.
 
 #### Adding subscription
 
