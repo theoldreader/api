@@ -13,10 +13,13 @@ Current API tries to mimic the unofficial Google Reader API.
 
 - Starring & tagging items
 - Social features
+- OAuth
 
 ### Authentication
 
 All requests you will be sending to the API should be authenticated by a token.
+
+Please note that The Old Reader allows users to sign in via OAuth (Google or Facebook), but the only way to get an API token for a now is to set password in settings and use it for authentication.
 
 #### Getting a token
 
