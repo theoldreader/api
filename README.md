@@ -1,6 +1,26 @@
 # The Old Reader API
 
+## TODO
+
+- Starring & tagging items
+- Social features
+- OAuth
+
+## Apps
+
+- Feeddler — [free](https://itunes.apple.com/us/app/feeddler-rss-reader-for-ipad/id364873582?mt=8), [paid](https://itunes.apple.com/us/app/feeddler-rss-reader-pro/id365710282?mt=8)
+
+## Contributing
+
+You are welcome to improve documentation, please feel free to send us pull requests with your adjustments.
+
+If you find any bugs or feel that something is not working as expected, please create a github issue or contact us at [api@theoldreader.com](mailto:api@theoldreader.com). 
+
+## Current API
+
 Current API tries to mimic the unofficial Google Reader API.
+
+Please note that even though you can use API both via http and https, we highly encourage you to use https for security reasons. 
 
 ### Differences
 
@@ -8,12 +28,6 @@ Current API tries to mimic the unofficial Google Reader API.
 - We use BSON ObjectId for user, item, subscription identifiers (example: ```00157a17b192950b65be3791```)
 - We also use ObjectId in Stream Ids instead of URL (example: ```feed/00157a17b192950b65be3791```)
 - All user ids are replaced by ```-``` in state/label strings (examples: ```user/-/state/com.google/reading-list```, ```user/-/label/Folder```)
-
-### TODO
-
-- Starring & tagging items
-- Social features
-- OAuth
 
 ### Authentication
 
