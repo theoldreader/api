@@ -8,7 +8,9 @@
 
 ## Apps
 
-- Feeddler — [free](https://itunes.apple.com/us/app/feeddler-rss-reader-for-ipad/id364873582?mt=8), [paid](https://itunes.apple.com/us/app/feeddler-rss-reader-pro/id365710282?mt=8)
+- [Feeddler Pro](https://itunes.apple.com/us/app/feeddler-rss-reader-pro/id365710282?mt=8) (iOS)
+- [Feeddler](https://itunes.apple.com/us/app/feeddler-rss-reader-for-ipad/id364873582?mt=8) (iOS)
+- [Listener Launcher](https://play.google.com/store/apps/details?id=com.piaci.listener.app) (Android)
 
 ## Contributing
 
