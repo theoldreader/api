@@ -53,15 +53,38 @@ LSID=none
 Auth=LyTEJPvTJiSPrCxLu46d
 ```
 
-Please note that you might get a token by requesting following url: ```/reader/api/0/accounts/ClientLogin```
+Please note that you can also get a token by requesting following url: ```/reader/api/0/accounts/ClientLogin```
 
-Also you might add ```output=json``` to POST parameters for corresponding result.
+Also you might want to add ```output=json``` to POST parameters for corresponding result.
 
 #### Using a token
 
 Include `Authorization: GoogleLogin auth=TOKEN` HTTP header in all your requests. For example:
 
 	Authorization: GoogleLogin auth=LyTEJPvTJiSPrCxLu46d
+
+### Errors
+
+All errors have following format:
+
+XML:
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<errors type="array">
+  <error>XML output currently is not supported</error>
+</errors>
+```
+
+JSON:
+
+```
+{
+	errors: [
+		"Temporary unavailable, please try later"
+	]
+}
+```
 
 ### Generic methods
 
