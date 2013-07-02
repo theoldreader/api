@@ -240,8 +240,7 @@ Other parameters:
 	n=1000 # Limit items
 	r=o # Reverse sorting
 	c=… # Continuation
-	ot=1371645508 # Older than
-	nt=1371645508 # Newer than
+	ot=1371645508 # Newer than (applied only when r=o)
 
 #### Item contents
 
