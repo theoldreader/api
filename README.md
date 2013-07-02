@@ -134,7 +134,7 @@ Contains folder list.
 
 GET [https://theoldreader.com/reader/api/0/preference/stream/list?output=json](https://theoldreader.com/reader/api/0/preference/stream/list?output=json)
 
-Contains information about subscriptions ordering for root and user folders.
+Contains information about subscriptions ordering for root (folders and subscriptions ordering) and user folders (subscriptions ordering).
 
 #### Update stream preferences
 
