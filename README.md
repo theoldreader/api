@@ -14,6 +14,7 @@
 - [gReader](https://play.google.com/store/apps/details?id=com.noinnion.android.greader.reader) (Android)
 - [gReader Pro](https://play.google.com/store/apps/details?id=com.noinnion.android.greader.readerpro) (Android)
 - [Listener Launcher](https://play.google.com/store/apps/details?id=com.piaci.listener.app) (Android)
+- [Liferea](http://lzone.de/liferea/) (Linux)
 - [tornexto (go to next item in a folder)](https://github.com/cowens/tornexto) (Bookmarklet)
 
 ## Contributing
