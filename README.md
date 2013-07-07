@@ -16,6 +16,7 @@
 - [Listener Launcher](https://play.google.com/store/apps/details?id=com.piaci.listener.app) (Android)
 - [Liferea](http://lzone.de/liferea/) (Linux)
 - [tornexto (go to next item in a folder)](https://github.com/cowens/tornexto) (Bookmarklet)
+- [Oxnt (send to Kindle)](http://oxnt.me/) (Web)
 
 ## Contributing
 
