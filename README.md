@@ -13,10 +13,13 @@
 - [Feeddler Pro](https://itunes.apple.com/us/app/feeddler-rss-reader-pro/id365710282?mt=8) (iOS)
 - [gReader](https://play.google.com/store/apps/details?id=com.noinnion.android.greader.reader) (Android)
 - [gReader Pro](https://play.google.com/store/apps/details?id=com.noinnion.android.greader.readerpro) (Android)
+- [D7 Reader](https://play.google.com/store/apps/details?id=com.droidlab7.reader) (Android)
+- [D7 Reader Pro](https://play.google.com/store/apps/details?id=com.droidlab7.reader.pro) (Android)
 - [Listener Launcher](https://play.google.com/store/apps/details?id=com.piaci.listener.app) (Android)
 - [Liferea](http://lzone.de/liferea/) (Linux)
-- [tornexto (go to next item in a folder)](https://github.com/cowens/tornexto) (Bookmarklet)
+- [FeedSpider](https://developer.palm.com/appredirect/?packageid=com.othelloventures.feedspider) (WebOS)
 - [Oxnt (send to Kindle)](http://oxnt.me/) (Web)
+- [tornexto (go to next item in a folder)](https://github.com/cowens/tornexto) (Bookmarklet)
 
 ## Contributing
 
