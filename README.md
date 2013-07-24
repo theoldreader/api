@@ -95,6 +95,26 @@ JSON:
 }
 ```
 
+### Status
+
+After a couple unsuccessful requests you might try to obtain current The Old Reader status:
+
+GET [https://theoldreader.com/reader/api/0/status?output=json](https://theoldreader.com/reader/api/0/status?output=json)
+
+Everything is fine:
+
+```
+> curl https://theoldreader.com/reader/api/0/status?output=json
+{"status":"up"}
+```
+
+Something is wrong:
+
+```
+> curl https://theoldreader.com/reader/api/0/status?output=json
+{"status":"down","description":"Database issues","redirect":"http://status.theoldreader.com"}
+```
+
 ### Generic methods
 
 #### Token
