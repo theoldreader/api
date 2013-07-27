@@ -202,6 +202,10 @@ GET [https://theoldreader.com/reader/api/0/subscription/list?output=json](https:
 
 Each subscription contains ```url```, ```htmlUrl``` and ```iconUrl```.
 
+#### Subscriptions OPML
+
+GET [https://theoldreader.com/reader/subscriptions/export](https://theoldreader.com/reader/subscriptions/export)
+
 #### Adding subscription
 
 POST [https://theoldreader.com/reader/api/0/subscription/quickadd?quickadd=blog.theoldreader.com](https://theoldreader.com/reader/api/0/subscription/quickadd?quickadd=blog.theoldreader.com)
