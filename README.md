@@ -24,6 +24,10 @@
 - [Oxnt (send to Kindle)](http://oxnt.me/) (Web)
 - [tornexto (go to next item in a folder)](https://github.com/cowens/tornexto) (Bookmarklet)
 
+## Libraries
+
+- [PHP](https://github.com/zelenin/Tor) (by [zelenin](https://github.com/zelenin))
+
 ## Contributing
 
 You are welcome to improve documentation, please feel free to send us pull requests with your adjustments.
