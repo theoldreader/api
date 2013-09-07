@@ -9,19 +9,32 @@
 
 ## Apps
 
-- [Feeddler](https://itunes.apple.com/us/app/feeddler-rss-reader-for-ipad/id364873582?mt=8) (iOS)
-- [Feeddler Pro](https://itunes.apple.com/us/app/feeddler-rss-reader-pro/id365710282?mt=8) (iOS)
-- [gReader](https://play.google.com/store/apps/details?id=com.noinnion.android.greader.reader) (Android)
-- [gReader Pro](https://play.google.com/store/apps/details?id=com.noinnion.android.greader.readerpro) (Android)
-- [D7 Reader](https://play.google.com/store/apps/details?id=com.droidlab7.reader) (Android)
-- [D7 Reader Pro](https://play.google.com/store/apps/details?id=com.droidlab7.reader.pro) (Android)
-- [The Old Reader (unofficial, beta)](https://play.google.com/store/apps/details?id=com.toreaderapp) (Android)
-- [Listener Launcher](https://play.google.com/store/apps/details?id=com.piaci.listener.app) (Android)
-- [Wizz Widget](https://play.google.com/store/apps/details?id=com.snowbee.colorize.hd) (Android)
+### iOS
+
+- [Feeddler](https://itunes.apple.com/us/app/feeddler-rss-reader-for-ipad/id364873582?mt=8)
+- [Feeddler Pro](https://itunes.apple.com/us/app/feeddler-rss-reader-pro/id365710282?mt=8)
+
+### Android
+
+- [gReader](https://play.google.com/store/apps/details?id=com.noinnion.android.greader.reader)
+- [gReader Pro](https://play.google.com/store/apps/details?id=com.noinnion.android.greader.readerpro)
+- [D7 Reader](https://play.google.com/store/apps/details?id=com.droidlab7.reader)
+- [D7 Reader Pro](https://play.google.com/store/apps/details?id=com.droidlab7.reader.pro)
+- [The Old Reader (unofficial, beta)](https://play.google.com/store/apps/details?id=com.toreaderapp)
+- [Listener Launcher](https://play.google.com/store/apps/details?id=com.piaci.listener.app)
+- [Wizz Widget](https://play.google.com/store/apps/details?id=com.snowbee.colorize.hd)
+
+### Web
+
+- [inboxN.com](http://www.inboxn.com/)
+- [Oxnt (send to Kindle)](http://oxnt.me/)
+
+
+### Other
+
 - [ThOR](http://store.ovi.com/content/382129) (Symbian)
 - [Liferea](http://lzone.de/liferea/) (Linux)
 - [FeedSpider](https://developer.palm.com/appredirect/?packageid=com.othelloventures.feedspider) (WebOS)
-- [Oxnt (send to Kindle)](http://oxnt.me/) (Web)
 - [tornexto (go to next item in a folder)](https://github.com/cowens/tornexto) (Bookmarklet)
 
 ## Libraries
