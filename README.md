@@ -21,8 +21,10 @@
 - [ThOR](http://store.ovi.com/content/382129) (Symbian)
 - [Liferea](http://lzone.de/liferea/) (Linux)
 - [FeedSpider](https://developer.palm.com/appredirect/?packageid=com.othelloventures.feedspider) (WebOS)
+- [FireReader](https://marketplace.firefox.com/app/firereader) (Firefox OS)
 - [Oxnt (send to Kindle)](http://oxnt.me/) (Web)
 - [tornexto (go to next item in a folder)](https://github.com/cowens/tornexto) (Bookmarklet)
+
 
 ## Libraries
 
