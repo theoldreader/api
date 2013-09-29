@@ -36,6 +36,7 @@
 - [Liferea](http://lzone.de/liferea/) (Linux)
 - [FeedSpider](https://developer.palm.com/appredirect/?packageid=com.othelloventures.feedspider) (WebOS)
 - [tornexto (go to next item in a folder)](https://github.com/cowens/tornexto) (Bookmarklet)
+- [FireReader](https://marketplace.firefox.com/app/firereader) (Firefox OS)
 
 ## Libraries
 
