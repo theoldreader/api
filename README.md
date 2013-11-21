@@ -23,10 +23,12 @@
 - [The Old Reader (unofficial, beta)](https://play.google.com/store/apps/details?id=com.toreaderapp)
 - [Listener Launcher](https://play.google.com/store/apps/details?id=com.piaci.listener.app)
 - [Wizz Widget](https://play.google.com/store/apps/details?id=com.snowbee.colorize.hd)
+- [NewsJet](http://newsjet.mobi/download)
 
 ### Windows Phone
 
 - [Old Reader](http://www.windowsphone.com/en-us/store/app/old-reader/1d949d51-76af-4a5d-acb8-57105c6f877a)
+- [Rss Reader](http://www.windowsphone.com/en-us/store/app/rss-reader/80647552-f882-4b39-a06e-ae844b0de416)
 
 ### Web
 
