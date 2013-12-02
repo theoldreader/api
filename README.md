@@ -29,6 +29,7 @@
 
 - [Old Reader](http://www.windowsphone.com/en-us/store/app/old-reader/1d949d51-76af-4a5d-acb8-57105c6f877a)
 - [Rss Reader](http://www.windowsphone.com/en-us/store/app/rss-reader/80647552-f882-4b39-a06e-ae844b0de416)
+- [NewsSpot](http://www.windowsphone.com/en-us/store/app/newsspot/f001b025-94d7-4769-a33d-7dd34778141c)
 
 ### Web
 
