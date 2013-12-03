@@ -283,6 +283,9 @@ Filter by stream:
 	# All items
 	s=user/-/state/com.google/reading-list
 	
+	# Starred items
+	s=user/-/state/com.google/starred
+	
 	# Read items
 	s=user/-/state/com.google/read
 	
@@ -292,7 +295,7 @@ Filter by stream:
 	# Subscription
 	s=feed/...
 
-Exclude items:
+Exclude items (please note that this does not work for starred items):
 	
 	# Only unread
 	xt=user/-/state/com.google/read
@@ -344,6 +347,8 @@ GET [https://theoldreader.com/reader/atom/user/-/label/Folder](https://theoldrea
 
 POST [https://theoldreader.com/reader/api/0/mark-all-as-read](https://theoldreader.com/reader/api/0/mark-all-as-read)
 
+Please note that this does not work for starred items.
+
 Parameters:
 
 	# All items
@@ -369,6 +374,12 @@ Parameters:
 	
 	# Mark as read
 	a=user/-/state/com.google/read
+
+	# Mark as starred
+	a=user/-/state/com.google/starred
 	
 	# Mark as unread
 	r=user/-/state/com.google/read
+	
+	# Remove starred mark
+	r=user/-/state/com.google/starred
