@@ -2,9 +2,8 @@
 
 ## TODO
 
-- Starring items
-- Tagging items
 - Social features
+- Tagging items
 - OAuth
 
 ## Apps
