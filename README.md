@@ -30,6 +30,11 @@
 - [Rss Reader](http://www.windowsphone.com/en-us/store/app/rss-reader/80647552-f882-4b39-a06e-ae844b0de416)
 - [NewsSpot](http://www.windowsphone.com/en-us/store/app/newsspot/f001b025-94d7-4769-a33d-7dd34778141c)
 
+### Symbian
+
+- [ThOR](http://store.ovi.com/content/382129)
+- [Gravity (Beta Support)](http://mobileways.de/latest/gravity-beta.sisx/?build=7302)
+
 ### Web
 
 - [inboxN.com](http://www.inboxn.com/)
@@ -38,7 +43,6 @@
 
 ### Other
 
-- [ThOR](http://store.ovi.com/content/382129) (Symbian)
 - [Liferea](http://lzone.de/liferea/) (Linux)
 - [FeedSpider](https://developer.palm.com/appredirect/?packageid=com.othelloventures.feedspider) (WebOS)
 - [FireReader](https://marketplace.firefox.com/app/firereader) (Firefox OS)
