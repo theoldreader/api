@@ -311,6 +311,8 @@ Other parameters:
 	nt=1371645508 # Older than (applied only when sorting is normal)
 	ot=1371645508 # Newer than (applied only when sorting is reverse)
 
+Please note that maximum limit is: ```10000``` for item ids, ```1000``` for item contents.
+
 #### Item contents
 
 POST [https://theoldreader.com/reader/api/0/stream/items/contents?output=json](https://theoldreader.com/reader/api/0/stream/items/contents?output=json)
