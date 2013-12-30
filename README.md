@@ -12,6 +12,7 @@
 
 - [Feeddler](https://itunes.apple.com/us/app/feeddler-rss-reader-for-ipad/id364873582?mt=8)
 - [Feeddler Pro](https://itunes.apple.com/us/app/feeddler-rss-reader-pro/id365710282?mt=8)
+- [Feedoo](https://itunes.apple.com/ua/app/feedoo/id779380930?mt=8)
 
 ### Android
 
