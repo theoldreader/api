@@ -309,8 +309,8 @@ Other parameters:
 	n=1000 # Limit items
 	r=o # Reverse sorting
 	c=… # Continuation
-	nt=1371645508 # Older than (applied only when sorting is normal)
-	ot=1371645508 # Newer than (applied only when sorting is reverse)
+	nt=1371645508 # Older than
+	ot=1371645508 # Newer than
 
 Please note that maximum limit is: ```10000``` for item ids, ```1000``` for item contents.
 
