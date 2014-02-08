@@ -55,6 +55,7 @@
 ## Libraries
 
 - [PHP](https://github.com/zelenin/Tor) (by [zelenin](https://github.com/zelenin))
+- [Ruby](https://github.com/ianzy/theoldreader) (by [ianzy](https://github.com/ianzy))
 
 ## Contributing
 
