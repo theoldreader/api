@@ -245,6 +245,19 @@ GET [https://theoldreader.com/reader/subscriptions/export](https://theoldreader.
 
 POST [https://theoldreader.com/reader/api/0/subscription/quickadd?quickadd=blog.theoldreader.com](https://theoldreader.com/reader/api/0/subscription/quickadd?quickadd=blog.theoldreader.com)
 
+Successful response:
+
+```
+{"query":"blog.theoldreader.com","numResults":1,"streamId":"feed/00157a17b192950b65be3791"}
+```
+
+Failed response:
+
+```
+{"query":"blog.theoldreader.com","numResults":0,"error":"Feed was not added. You already have 129 subscriptions, your limit is 100. You should upgrade to premium."}
+```
+
+
 #### Updating subscription
 
 POST [https://theoldreader.com/reader/api/0/subscription/edit](https://theoldreader.com/reader/api/0/subscription/edit)
