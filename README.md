@@ -47,6 +47,7 @@
 - [Liferea](http://lzone.de/liferea/) (Linux)
 - [FeedSpider](https://developer.palm.com/appredirect/?packageid=com.othelloventures.feedspider) (WebOS)
 - [FireReader](https://marketplace.firefox.com/app/firereader) (Firefox OS)
+- [yTOR](http://nothinghf.weebly.com/) (Windows)
 
 ### Bookmarklets
 
@@ -61,13 +62,13 @@
 
 You are welcome to improve documentation, please feel free to send us pull requests with your adjustments.
 
-If you find any bugs or feel that something is not working as expected, please create a github issue or contact us at [api@theoldreader.com](mailto:api@theoldreader.com). 
+If you find any bugs or feel that something is not working as expected, please create a github issue or contact us at [api@theoldreader.com](mailto:api@theoldreader.com).
 
 ## Current API
 
 Current API tries to mimic the unofficial Google Reader API.
 
-Please note that even though you can use API both via http and https, we highly encourage you to use https for security reasons. 
+Please note that even though you can use API both via http and https, we highly encourage you to use https for security reasons.
 
 ### Differences
 
@@ -86,7 +87,7 @@ Please note that The Old Reader allows users to sign in via OAuth (Google or Fac
 
 Sample request:
 
-```	
+```
 curl -d "client=YourAppName&accountType=HOSTED_OR_GOOGLE&service=reader&Email=test@krasnoukhov.com&Passwd=..." https://theoldreader.com/accounts/ClientLogin
 ```
 
@@ -266,16 +267,16 @@ POST [https://theoldreader.com/reader/api/0/subscription/edit](https://theoldrea
 Parameters:
 
 	ac=edit
-	
+
 	# Stream Id
 	s=feed/00157a17b192950b65be3791
-	
+
 	# Change subscription title
 	t=Title
-	
+
 	# Move subscription to folder with a given title
 	a=user/-/label/Folder
-	
+
 	# Move subscription to default folder (no difference what r is)
 	r=user/-/label/Folder
 
@@ -300,21 +301,21 @@ Filter by stream:
 
 	# All items
 	s=user/-/state/com.google/reading-list
-	
+
 	# Starred items
 	s=user/-/state/com.google/starred
-	
+
 	# Read items
 	s=user/-/state/com.google/read
-	
+
 	# Folder
 	s=user/-/label/...
-	
+
 	# Subscription
 	s=feed/...
 
 Exclude items (please note that this does not work for starred items):
-	
+
 	# Only unread
 	xt=user/-/state/com.google/read
 
@@ -336,7 +337,7 @@ Parameters:
 
 	# Item ids
 	i=…&i=…&i=…
-	
+
 	# Atom output
 	output=atom
 
@@ -345,23 +346,23 @@ Parameters:
 GET [https://theoldreader.com/reader/api/0/stream/contents?output=json](https://theoldreader.com/reader/api/0/stream/contents?output=json)
 
 Parameters:
-	
+
 	# Same as for ids
-	
+
 	# Atom output
 	output=atom
 
 Also there is an atom feed for specific Stream Id:
 
-GET [https://theoldreader.com/reader/atom/feed/00157a17b192950b65be3791](https://theoldreader.com/reader/atom/feed/00157a17b192950b65be3791) 
+GET [https://theoldreader.com/reader/atom/feed/00157a17b192950b65be3791](https://theoldreader.com/reader/atom/feed/00157a17b192950b65be3791)
 
 And state:
 
-GET [https://theoldreader.com/reader/atom/user/-/state/com.google/read](https://theoldreader.com/reader/atom/user/-/state/com.google/read) 
+GET [https://theoldreader.com/reader/atom/user/-/state/com.google/read](https://theoldreader.com/reader/atom/user/-/state/com.google/read)
 
 And folder:
 
-GET [https://theoldreader.com/reader/atom/user/-/label/Folder](https://theoldreader.com/reader/atom/user/-/label/Folder) 
+GET [https://theoldreader.com/reader/atom/user/-/label/Folder](https://theoldreader.com/reader/atom/user/-/label/Folder)
 
 #### Marking all as read
 
@@ -373,13 +374,13 @@ Parameters:
 
 	# All items
 	s=user/-/state/com.google/reading-list
-	
+
 	# Folder
 	s=user/-/label/...
-	
+
 	# Subscription
 	s=feed/...
-	
+
 	# Older than timestamp in nanoseconds
 	ts=1371645508000000
 
@@ -391,15 +392,15 @@ Parameters:
 
 	# Item ids
 	i=…&i=…&i=…
-	
+
 	# Mark as read
 	a=user/-/state/com.google/read
 
 	# Mark as starred
 	a=user/-/state/com.google/starred
-	
+
 	# Mark as unread
 	r=user/-/state/com.google/read
-	
+
 	# Remove starred mark
 	r=user/-/state/com.google/starred
