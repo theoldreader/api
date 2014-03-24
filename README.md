@@ -24,6 +24,7 @@
 - [Listener Launcher](https://play.google.com/store/apps/details?id=com.piaci.listener.app)
 - [Wizz Widget](https://play.google.com/store/apps/details?id=com.snowbee.colorize.hd)
 - [NewsJet](http://newsjet.mobi/download)
+- [Daily Feed](https://play.google.com/store/apps/details?id=com.codingbuffalo.dailyfeed)
 
 ### Windows Phone
 
