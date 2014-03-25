@@ -41,6 +41,7 @@
 
 - [inboxN.com](http://www.inboxn.com/)
 - [Oxnt (send to Kindle)](http://oxnt.me/)
+- [Updatified](http://updatified.com/)
 
 
 ### Other
