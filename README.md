@@ -8,60 +8,7 @@
 
 ## Apps
 
-### iOS
-
-- [Reeder for iOS](http://reederapp.com/ios/)
-- [Feeddler](https://itunes.apple.com/us/app/feeddler-rss-reader-for-ipad/id364873582?mt=8)
-- [Feeddler Pro](https://itunes.apple.com/us/app/feeddler-rss-reader-pro/id365710282?mt=8)
-- [Feedoo](https://itunes.apple.com/us/app/feedoo/id779380930?mt=8)
-- [RssReader](https://itunes.apple.com/us/app/rss-reader/id840528757?mt=8)
-
-### Android
-
-- [gReader](https://play.google.com/store/apps/details?id=com.noinnion.android.greader.reader)
-- [gReader Pro](https://play.google.com/store/apps/details?id=com.noinnion.android.greader.readerpro)
-- [D7 Reader](https://play.google.com/store/apps/details?id=com.droidlab7.reader)
-- [D7 Reader Pro](https://play.google.com/store/apps/details?id=com.droidlab7.reader.pro)
-- [The Old Reader (unofficial, beta)](https://play.google.com/store/apps/details?id=com.toreaderapp)
-- [Listener Launcher](https://play.google.com/store/apps/details?id=com.piaci.listener.app)
-- [Wizz Widget](https://play.google.com/store/apps/details?id=com.snowbee.colorize.hd)
-- [NewsJet](http://newsjet.mobi/download)
-- [Daily Feed](https://play.google.com/store/apps/details?id=com.codingbuffalo.dailyfeed)
-
-### Windows Phone
-
-- [Old Reader](http://www.windowsphone.com/en-us/store/app/old-reader/1d949d51-76af-4a5d-acb8-57105c6f877a)
-- [Rss Reader](http://www.windowsphone.com/en-us/store/app/rss-reader/80647552-f882-4b39-a06e-ae844b0de416)
-- [NewsSpot](http://www.windowsphone.com/en-us/store/app/newsspot/f001b025-94d7-4769-a33d-7dd34778141c)
-
-### Symbian
-
-- [ThOR](http://store.ovi.com/content/382129)
-- [Gravity (Beta Support)](http://mobileways.de/latest/gravity-beta.sisx/?build=7302)
-
-### OS X
-
-- [Reeder for Mac](http://reederapp.com/mac/)
-- [iRSS](https://itunes.apple.com/us/app/irss/id795983486?ls=1&mt=12)
-- [Vienna 3 Beta](http://www.vienna-rss.org/)
-
-### Web
-
-- [inboxN.com](http://www.inboxn.com/)
-- [Oxnt (send to Kindle)](http://oxnt.me/)
-- [Updatified](http://updatified.com/)
-
-### Other
-
-- [Liferea](http://lzone.de/liferea/) (Linux)
-- [FeedSpider](https://developer.palm.com/appredirect/?packageid=com.othelloventures.feedspider) (WebOS)
-- [FireReader](https://marketplace.firefox.com/app/firereader) (Firefox OS)
-- [yTOR](http://nothinghf.weebly.com/) (Windows)
-- [The Old Reader Notifier](https://github.com/Somasis/scripts/blob/master/oldnotifier) (Linux)
-
-### Bookmarklets
-
-- [tornexto (go to next item in a folder)](https://github.com/cowens/tornexto)
+See complete list of apps and extensions on [theoldreader.com](http://theoldreader.com/pages/apps).
 
 ## Libraries
 
