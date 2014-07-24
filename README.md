@@ -10,6 +10,7 @@
 
 ### iOS
 
+- [Reeder for iOS](http://reederapp.com/ios/)
 - [Feeddler](https://itunes.apple.com/us/app/feeddler-rss-reader-for-ipad/id364873582?mt=8)
 - [Feeddler Pro](https://itunes.apple.com/us/app/feeddler-rss-reader-pro/id365710282?mt=8)
 - [Feedoo](https://itunes.apple.com/us/app/feedoo/id779380930?mt=8)
@@ -38,12 +39,17 @@
 - [ThOR](http://store.ovi.com/content/382129)
 - [Gravity (Beta Support)](http://mobileways.de/latest/gravity-beta.sisx/?build=7302)
 
+### OS X
+
+- [Reeder for Mac](http://reederapp.com/mac/)
+- [iRSS](https://itunes.apple.com/us/app/irss/id795983486?ls=1&mt=12)
+- [Vienna 3 Beta](http://www.vienna-rss.org/)
+
 ### Web
 
 - [inboxN.com](http://www.inboxn.com/)
 - [Oxnt (send to Kindle)](http://oxnt.me/)
 - [Updatified](http://updatified.com/)
-
 
 ### Other
 
@@ -51,6 +57,7 @@
 - [FeedSpider](https://developer.palm.com/appredirect/?packageid=com.othelloventures.feedspider) (WebOS)
 - [FireReader](https://marketplace.firefox.com/app/firereader) (Firefox OS)
 - [yTOR](http://nothinghf.weebly.com/) (Windows)
+- [The Old Reader Notifier](https://github.com/Somasis/scripts/blob/master/oldnotifier) (Linux)
 
 ### Bookmarklets
 
