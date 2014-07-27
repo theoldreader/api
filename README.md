@@ -128,7 +128,7 @@ GET [https://theoldreader.com/reader/api/0/user-info?output=json](https://theold
 
 ```
 > curl https://theoldreader.com/reader/api/0/user-info?output=json -H "Authorization: GoogleLogin auth=LyTEJPvTJiSPrCxLu46d"
-{"userId":"00157a17b192950b65be3791","userName":"Test","userProfileId":"00157a17b192950b65be3791","userEmail":"test@krasnoukhov.com","isBloggerUser":false,"signupTimeSec":1370709105,"isMultiLoginEnabled":false}
+{"userId":"00157a17b192950b65be3791","userName":"Test","userProfileId":"00157a17b192950b65be3791","userEmail":"test@krasnoukhov.com","isBloggerUser":false,"signupTimeSec":1370709105,"isMultiLoginEnabled":false,"isPremium":true}
 ```
 
 #### Preferences list
