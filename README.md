@@ -32,7 +32,7 @@ Please note that even though you can use API both via http and https, we highly 
 - Currently only json format is supported
 - We use BSON ObjectId for user, item, subscription identifiers (example: ```00157a17b192950b65be3791```)
 - We also use ObjectId in Stream Ids instead of URL (example: ```feed/00157a17b192950b65be3791```)
-- All user ids are replaced by ```-``` in state/label strings (examples: ```user/-/state/com.google/reading-list```, ```user/-/label/Folder```)
+- Current user id is replaced with ```-``` in state/label strings (examples: ```user/-/state/com.google/reading-list```, ```user/-/label/Folder```)
 
 ### Authentication
 
@@ -137,11 +137,43 @@ GET [https://theoldreader.com/reader/api/0/preference/list?output=json](https://
 
 Added for compatibility.
 
+### Friends
+
 #### Friend list
 
 GET [https://theoldreader.com/reader/api/0/friend/list?output=json](https://theoldreader.com/reader/api/0/friend/list?output=json)
 
-Added for compatibility for now. Will be used for The Old Reader social features.
+Contains friends list.
+
+#### Following/unfollowing a friend
+
+POST [https://theoldreader.com/reader/api/0/friends/edit](https://theoldreader.com/reader/api/0/friends/edit)
+
+Parameters:
+
+	# Follow
+	action=addfollowing
+
+	# Or unfollow
+	action=removefollowing
+
+	# By id
+	u=00157a17b192950b65be3791
+
+	# Or by stream id
+	u=user/00157a17b192950b65be3791/state/com.google/broadcast
+
+### Comments
+
+#### Adding a comment
+
+POST [https://theoldreader.com/reader/api/0/comments/edit](https://theoldreader.com/reader/api/0/comments/edit)
+
+Parameters:
+
+	action=addcomment
+	i=tag:google.com,2005:reader/item/00157a17b192950b65be3791
+	comment=Hello
 
 ### Folders
 
@@ -188,7 +220,7 @@ Parameters:
 
 GET [https://theoldreader.com/reader/api/0/unread-count?output=json](https://theoldreader.com/reader/api/0/unread-count?output=json)
 
-Contains unread counts for all items (reading list), each folder and subscription.
+Contains unread counts for all items (reading list), each folder, subscription and friend.
 
 #### Subscriptions list
 
@@ -259,19 +291,34 @@ Filter by stream:
 	# All items
 	s=user/-/state/com.google/reading-list
 
+	# Read items
+	s=user/-/state/com.google/read
+
 	# Starred items
 	s=user/-/state/com.google/starred
 
-	# Read items
-	s=user/-/state/com.google/read
+	# Liked items
+	s=user/-/state/com.google/like
+
+	# Shared items
+	s=user/-/state/com.google/broadcast
+
+	# Commented items
+	s=user/-/state/com.google/broadcast-friends-comments
+
+	# Shared by friends
+	s=user/-/state/com.google/broadcast-friends
 
 	# Folder
 	s=user/-/label/...
 
 	# Subscription
-	s=feed/...
+	s=feed/00157a17b192950b65be3791
 
-Exclude items (please note that this does not work for starred items):
+	# Friend
+	s=user/00157a17b192950b65be3791/state/com.google/broadcast
+
+Exclude items (please note that this does not work for starred/liked/shared/commented items):
 
 	# Only unread
 	xt=user/-/state/com.google/read
@@ -293,7 +340,7 @@ POST [https://theoldreader.com/reader/api/0/stream/items/contents?output=json](h
 Parameters:
 
 	# Item ids
-	i=…&i=…&i=…
+	i=tag:google.com,2005:reader/item/00157a17b192950b65be3791&i=…&i=…
 
 	# Atom output
 	output=atom
@@ -325,18 +372,24 @@ GET [https://theoldreader.com/reader/atom/user/-/label/Folder](https://theoldrea
 
 POST [https://theoldreader.com/reader/api/0/mark-all-as-read](https://theoldreader.com/reader/api/0/mark-all-as-read)
 
-Please note that this does not work for starred items.
+Please note that this does not work for starred/liked/shared/commented items.
 
 Parameters:
 
 	# All items
 	s=user/-/state/com.google/reading-list
 
+	# Shared by friends
+	s=user/-/state/com.google/broadcast-friends
+
 	# Folder
 	s=user/-/label/...
 
 	# Subscription
-	s=feed/...
+	s=feed/00157a17b192950b65be3791
+
+	# Friend
+	s=user/00157a17b192950b65be3791/state/com.google/broadcast
 
 	# Older than timestamp in nanoseconds
 	ts=1371645508000000
@@ -348,7 +401,7 @@ POST [https://theoldreader.com/reader/api/0/edit-tag](https://theoldreader.com/r
 Parameters:
 
 	# Item ids
-	i=…&i=…&i=…
+	i=tag:google.com,2005:reader/item/00157a17b192950b65be3791&i=…&i=…
 
 	# Mark as read
 	a=user/-/state/com.google/read
@@ -356,8 +409,23 @@ Parameters:
 	# Mark as starred
 	a=user/-/state/com.google/starred
 
+	# Mark as liked
+	a=user/-/state/com.google/like
+
+	# Mark as shared
+	a=user/-/state/com.google/broadcast
+
+	# Mark as shared (with note)
+	a=user/-/state/com.google/broadcast&annotation=Hello
+
 	# Mark as unread
 	r=user/-/state/com.google/read
 
 	# Remove starred mark
 	r=user/-/state/com.google/starred
+
+	# Remove liked mark
+	r=user/-/state/com.google/like
+
+	# Remove shared mark
+	r=user/-/state/com.google/broadcast
