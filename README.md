@@ -2,7 +2,6 @@
 
 ## TODO
 
-- Social features
 - Tagging items
 - OAuth
 
