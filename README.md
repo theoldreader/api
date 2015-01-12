@@ -67,7 +67,7 @@ Include `Authorization: GoogleLogin auth=TOKEN` HTTP header in all your requests
 
 ### Errors
 
-All errors have following format:
+All errors except [Adding subscription](#adding-subscription) have following format:
 
 XML:
 
