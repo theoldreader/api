@@ -146,7 +146,7 @@ Contains friends list.
 
 #### Following/unfollowing a friend
 
-POST [https://theoldreader.com/reader/api/0/friends/edit](https://theoldreader.com/reader/api/0/friends/edit)
+POST [https://theoldreader.com/reader/api/0/friend/edit](https://theoldreader.com/reader/api/0/friend/edit)
 
 Parameters:
 
