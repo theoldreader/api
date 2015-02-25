@@ -166,7 +166,7 @@ Parameters:
 
 #### Adding a comment
 
-POST [https://theoldreader.com/reader/api/0/comments/edit](https://theoldreader.com/reader/api/0/comments/edit)
+POST [https://theoldreader.com/reader/api/0/comment/edit](https://theoldreader.com/reader/api/0/comment/edit)
 
 Parameters:
 
